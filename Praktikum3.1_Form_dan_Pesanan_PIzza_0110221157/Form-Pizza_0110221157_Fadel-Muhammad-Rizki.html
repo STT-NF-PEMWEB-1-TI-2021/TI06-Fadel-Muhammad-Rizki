@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body style="background-color: wheat;">
+    <form action="Pesanan-Form_0110221157_Fadel-Muhammad-Rizki.html">
+    <div style="margin-left: 30%; margin-right: 30%; border: solid; padding: 10px; background-color: white;">
+        <div class="head" style="margin-left: 40px;">
+            <h2>Black Goose Bisrto | Pizza-on-Demand</h2>
+            <p>Our 12" wood-fired pizza are available for delivery.</p>
+            <p>Build your custom pizza and we'll deliver it within an hour</p>
+            <br>
+        </div>
+
+        <div class="table1" style="margin-left: 40px;">
+            <p>Your Information</p>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><label for="nama"><input type="text" id="nama" value="Fadel M r"></label></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td><label for="address"><textarea name="alamat" id="address" cols="21" rows="7"></textarea></label></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>:</td>
+                    <td><label for="phone"><input type="text" id="phone" value="555-1212" ></label></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td>:</td>
+                    <td><label for="email"><input type="text" id="email" value="fadelmr27@gmail.com"></label></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="del. Intruction" style="margin-left: 40px;">
+            <p>Delivery Intruction</p>
+            <textarea name="deliveru" id="intruction" cols="36" rows="3" maxlength="400" placeholder="No more than 400 Charachters long"></textarea>
+            <br>
+            <br>
+        </div>
+
+        <div class="spec-pizza" style="margin-left: 40px;">
+            <div class="crust">
+                <p><b>Design Your Dream Pizza :</b></p>
+                <p>Pizza Specs</p>
+                <br>
+                <p>Crust (Choose One) :</p>
+                <ul style="list-style-type: none;">
+                    <li><input type="radio" name="spec" id="classic" value="Classic White" checked>Classic White</li>
+                    <li><input type="radio" name="spec" id="multi" value="Multigrain">Multigrain</li>
+                    <li><input type="radio" name="spec" id="cheese" value="Cheese-Stuffed Crust">Cheese-Stuffed Crust</li>
+                    <li><input type="radio" name="spec" id="glutten" value="Glutten-Free">Glutten-Free</li>
+                </ul>
+            </div>
+
+            <div class="topping">
+                <p>Toppings (Choose as many as you want):</p>
+                <div class="checkbox" style="margin-left: 40px;">
+                    <input type="checkbox" name="topping1" id="topping1" checked>
+                    <label for="topping1">Red Sauce</label><br>
+                    <input type="checkbox" name="topping2" id="topping2">
+                    <label for="topping2">White Sauce</label><br>
+                    <input type="checkbox" name="topping3" id="topping3" checked>
+                    <label for="topping3">Mozzarella Cheese</label><br>
+                    <input type="checkbox" name="topping4" id="topping4" checked>
+                    <label for="topping4">Pepperoni</label><br>
+                    <input type="checkbox" name="topping5" id="topping5" checked>
+                    <label for="topping5">Mushrooms</label><br>
+                    <input type="checkbox" name="topping6" id="topping6">
+                    <label for="topping6">Peppers</label><br>
+                    <input type="checkbox" name="topping7" id="topping7">
+                    <label for="topping7">Anchovies</label><br>
+                </div>
+            </div>
+        </div>
+        <div class="quantity" style="margin-left: 40px;">
+            <br>
+            <p>Number</p>
+            <p>How Many pizzas : <input type="number" name="ordered" id="quantity" min="1" max="6" value="1" style="width: 30px;"></p>
+            <p><input type="Submit" value="Bring me Pizza!!!"> <input type="reset"></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
