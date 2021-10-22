@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook</title>
+</head>
+<body style="background-color: thistle;">
+    <header style="margin-bottom: 40px; background-color: antiquewhite; padding-bottom: 20px; padding-right: 20px; padding-left: 20px; padding-top: 3px;">
+        <h2 style="text-align: center; margin: 7px;">A Web Page</h2>
+        <div class="wrapper" style="display: flex; justify-content: space-between;">
+            <nav>
+                <a href=""><img src="img/kiri.png" style="width: 20px; margin-right: 10px;" alt=""></a>
+                <a href=""><img src="img/Kanan.png" style="width: 20px; margin-right: 10px;" alt=""></a>
+                <a href=""><img src="img/cancel.png" style="width: 15px; margin-right: 10px;" alt=""></a>
+                <a href=""><img src="img/Home.png" style="width: 20px; margin-right: 10px;" alt=""></a>
+            </nav>
+            <input type="search" style="width: 75%;" placeholder="http://">
+            <input type="search" style="background-image: url(img/Search.png); background-repeat: no-repeat; background-size: 30px; background-position: left center ; text-indent: 30px;">
+        </div>  
+    </header>
+
+    <div class="wrapper" style="margin: 20px; padding: 0%; margin-left: 5%; margin-right: 5%;">
+        <table style="width: 100%; text-align: center; border: solid; background-color: white; padding: 0;">
+            <tr>
+                <td><h3><a href="">Home</a></h3></td>
+                <td><h3>|</h3></td>
+                <td><h3><a href="">Generate Link</a></h3></td>
+                <td><h3>|</h3></td>
+                <td><h3><a href="">Transaction History</a></h3></td>
+                <td><h3>|</h3></td>
+                <td><h3><a href="">Policy</a></h3></td>
+                <td><h3>|</h3></td>
+                <td><h3><a href="">Logout</a></h3></td>
+            </tr>
+        </table>
+
+        <table style="border-spacing: 10px; border-spacing: 10px; margin-left: 10%; margin-right: auto; width: 100%; margin-top: 70px;">
+            <tr>
+                <td rowspan="10" style="vertical-align: top; width: 20%; text-align: center;"><img src="img/macbook.png" style="width: 300px;" alt=""><br>
+                    <input type="file" name="file" id="file" accept="image/*" style="display: none;">
+                    <label for="file" style="color: white; padding: 10px; background-color: rgb(47, 194, 28); border: solid black;">Upload Picture</label>
+                </td>
+                <td>Tittle Here</td>
+                <td>:</td>
+                <td><label for="title"><input type="text" name="title" id="title" style="width: 50%;" value="Macbook Air $800"></label></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td><label for="description"><textarea name="deskripsi" id="description" cols="37" rows="10">Year : 200
+                    
+                                        Model :
+
+                                        Condition : Mint
+                </textarea></label></td>
+            </tr>
+            <tr>
+                <td>Account Number</td>
+                <td>:</td>
+                <td><label for="account"><input type="text" name="account" id="account" style="width: 50%;" value="123-456-789-0"></label></td>
+            </tr>
+            <tr>
+                <td>Bank</td>
+                <td>:</td>
+                <td><input type="text" list="bank" style="width: 50%;">
+                    <div class="list_bank">
+                        <datalist id="bank">
+                            <option value="BNI"></option>
+                            <option value="BRI"></option>
+                            <option value="BTN"></option>
+                            <option value="BCA"></option>
+                            <option value="BSI"></option>
+                            <option value="Bukopin"></option>
+                            <option value="CIMB Niaga"></option>
+                            <option value="Citibank"></option>
+                            <option value="Danamon"></option>
+                            <option value="Mandiri"></option>
+                            <option value="Mega"></option>
+                        </datalist>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder</td>
+                <td>:</td>
+                <td><label for="name"><input type="text" name="name" id="name" style="width: 50%;" placeholder="Name Here"></label></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Transaction</td>
+                <td rowspan="3">:</td>
+                <td><label for="transaction"><input type="number" name="transaksi" id="transaction" min="1" max="10" value="1"></label><br>*If the Transaction is For 3 person, Choose 3 from the Droop-Down list</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="phone" name="phone" value="mobile phone" checked><label for="phone">Send to Mobile Phone</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="email" name="email" value="E-mail" checked><label for="email">Send to E-mail</label></td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone</td>
+                <td>:</td>
+                <td><label for="phone_number"><input type="tel" name="number" id="phone_number"></label></td>
+            </tr>
+            <tr>
+                <td>Send to E-mail</td>
+                <td>:</td>
+                <td><label for="mail"><input type="email" name="email" id="mail"></label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><label for="nabr"><input type="submit" name="nabr" id="nabr" value="Generate Nabr Link" style="background-color: rgb(13, 133, 13); color: white; width: 40%; padding: 10px;"></label></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
