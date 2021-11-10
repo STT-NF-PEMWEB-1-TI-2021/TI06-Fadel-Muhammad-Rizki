@@ -1,0 +1,54 @@
+.wrapper {
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.wrapper aside {
+    float: right; 
+    width: 20%; 
+    text-align: right; 
+    margin-top: 20px; 
+    padding: 20px;
+}
+
+.profile {
+    display: flex; 
+    padding: 15px; 
+}
+
+.profile ul{
+    list-style-type: none;
+}
+
+.profile img {
+    width: 40%;
+
+    align-self: center;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.container video {
+    width: 250px;
+}
+
+.figure {
+    border: 1px solid; 
+    padding: 5px; 
+    margin-left: 5px; 
+    width: 200px; 
+    text-align: center;
+}
+
+.figure img {
+    width: 40%;
+    padding: 3px;
+}
+
+.nav img {
+    width: 20px;
+}
