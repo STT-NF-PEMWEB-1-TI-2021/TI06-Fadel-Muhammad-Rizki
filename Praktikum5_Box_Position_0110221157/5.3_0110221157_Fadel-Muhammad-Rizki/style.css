@@ -1,0 +1,60 @@
+/* * {
+    position: relative;
+    float: left;
+    margin: 10px;
+} */
+#kecil {
+    position: relative;
+    background-color: yellow;
+    width: 35vh;
+    height: 15vh;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+#besar {
+    position: relative;
+    background-color: orange;
+    height: 15vh;
+    width: 79%;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+#box1 {
+    position: relative;
+    background-color: greenyellow;
+    width: 35vh;
+    height: 75vh;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+#box2 {
+    position: relative;
+    background-color: grey;
+    width: 59.7%;
+    height: 75vh;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+#box3 {
+    position: relative;
+    background-color: aqua;
+    width: 35vh;
+    height: 75vh;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
+.footer {
+    position: relative;
+    background-color: blue;
+    width: 98%;
+    height: 15vh;
+    margin: 15px;
+    float: left;
+    margin: 10px;
+    border: solid 2px;
+}
