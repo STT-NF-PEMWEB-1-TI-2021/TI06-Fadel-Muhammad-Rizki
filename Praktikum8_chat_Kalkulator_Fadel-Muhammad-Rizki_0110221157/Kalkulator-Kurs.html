@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator Kurs</title>
+    <style>
+        fieldset {
+            width: 35%; height: auto; background-color: rgb(215, 240, 248);
+        }
+        table{
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <tr>
+                <th>Masukkan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="nilai" onchange="kurs()" min="0"></td>
+                <td>
+                    <select id="valas" onchange="kurs()">
+                        <option value="usd">Dollar US</option>
+                        <option value="sgd">Dollar Singapura</option>
+                        <option value="rm">Ringgit Malaysia</option>
+                        <option value="jpy">Yen Jepang</option>
+                        <option value="eur">Euro</option>
+                        <option value="riyal">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="number" id="rp" onchange="kurs()"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function kurs(){
+            let nilai = Number(document.getElementById("nilai").value);
+            let valas = document.getElementById("valas").value;
+            let uang = document.getElementById("rp")
+            if(valas == "usd"){
+                uang.value = nilai * 9915;
+            }else if(valas == "sgd"){
+                uang.value = nilai * 13472;
+            }else if(valas == "rm"){
+                uang.value = nilai * 874;
+            }else if(valas == "jpy"){
+                uang.value = nilai * 120;
+            }else if(valas == "eur"){
+                uang.value = nilai * 15888;
+            }else if(valas == "riyal"){
+                uang.value = nilai * 3592;
+            }
+        }
+    </script>
+</body>
+</html>
